@@ -3,7 +3,7 @@ from prompt_finder_and_invoke_llm import prompt_finder
 from chat_history_prompt_generator import chat_history
 
 # Title displayed on the streamlit web app
-st.title(f""":rainbow[Bedrock Chat]""")
+st.title(f"""WealthCo Financial Assistant""")
 
 # configuring values for session state
 if "messages" not in st.session_state:
