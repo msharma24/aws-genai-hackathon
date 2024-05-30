@@ -14,7 +14,6 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 # adding some special effects from the UI perspective
-st.balloons()
 # evaluating st.chat_input and determining if a question has been input
 if question := st.chat_input("Ask me about anything...but actually...anything..."):
     # with the user icon, write the question to the front end
