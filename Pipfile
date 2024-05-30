@@ -5,11 +5,13 @@ name = "pypi"
 
 [packages]
 boto3 = "*"
+langchain = "*"
 botocore = "*"
 streamlit = "*"
-langchain = "*"
+python-dotenv = "*"
+angchain-community = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.10"

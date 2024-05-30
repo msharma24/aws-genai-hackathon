@@ -1,0 +1,8 @@
+Collecting dotenv
+  Using cached dotenv-0.0.5.tar.gz (2.4 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'error'
