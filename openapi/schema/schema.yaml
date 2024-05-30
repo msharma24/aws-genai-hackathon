@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Bank Data API
+  description: API for accessing dummy bank data
+  version: 1.0.0
+paths:
+  /bank-data:
+    get:
+      summary: Retrieve bank data
+      description: Retrieve a list of dummy bank data entries
+      responses:
+        "200":
+          description: A list of bank data entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/BankData"
+components:
+  schemas:
+    BankData:
+      type: object
+      properties:
+        customerName:
+          type: string
+          description: The name of the customer
+          example: John Doe
+        bankAccountInformation:
+          type: string
+          description: The bank account information of the customer
+          example: 123456789
+        mortgageSummaryDetails:
+          type: string
+          description: Summary details of the mortgage
+          example: 3.5% fixed rate mortgage
+        balanceDue:
+          type: integer
+          description: The balance due on the mortgage
+          example: 150000
+        nextPaymentDate:
+          type: string
+          format: date
+          description: The next payment date for the mortgage
+          example: 2024-06-15
+        personalisedInvestmentStrategy:
+          type: string
+          description: The personalised investment strategy for the customer
+          example: Diversify across technology and healthcare sectors
